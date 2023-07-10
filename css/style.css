@@ -128,11 +128,27 @@ a {
   font-size: 3.0rem;
 }
 
-#titulo {
+.titulo {
   padding: 170px;
   color: #fff;
   text-align: center;
   font-size: 4.0rem;
+}
+
+.titulo::after {
+  content: '';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%, 100%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .project {
@@ -180,10 +196,4 @@ footer {
   color: #fff;
   background-color: #24252a;
   text-align: center;
-}
-
-.animacao-texto {
-  position: relative;
-  top: 0;
-  transition: top 1s;
 }

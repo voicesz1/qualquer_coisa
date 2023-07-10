@@ -44,15 +44,22 @@ class MobileNavbar {
   mobileNavbar.init();
 
   /*animação dos textos*/
-        const animacaoTexto = document.getElementById('animacao-texto');
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+  }
 
-        function animateTexto() {
-            animatedText.style.top = '-50px'; // Ajuste esse valor para controlar a distância que os textos sobem
-            setTimeout(resetTexto, 1000); // Ajuste esse valor para controlar a duração da animação
-        }
+  // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+  // function typeWriter(elemento) {
+  //   const textoArray = elemento.innerHTML.split('');
+  //   elemento.innerHTML = '';
+  //   for(let i = 0; i < textoArray.length; i++) {
+  //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+  //   }
+  // }
 
-        function resetTexto() {
-            animatedText.style.top = '0';
-        }
-
-        setInterval(animateText, 3000); // Ajuste esse valor para controlar o intervalo entre as animações
+  const tituloPrincipal = document.querySelector('h1');
+  typeWriter(titulo);
