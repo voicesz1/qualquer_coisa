@@ -42,3 +42,17 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  /*animação dos textos*/
+        const animacaoTexto = document.getElementById('animacao-texto');
+
+        function animateTexto() {
+            animatedText.style.top = '-50px'; // Ajuste esse valor para controlar a distância que os textos sobem
+            setTimeout(resetTexto, 1000); // Ajuste esse valor para controlar a duração da animação
+        }
+
+        function resetTexto() {
+            animatedText.style.top = '0';
+        }
+
+        setInterval(animateText, 3000); // Ajuste esse valor para controlar o intervalo entre as animações

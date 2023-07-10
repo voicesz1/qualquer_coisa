@@ -124,17 +124,66 @@ a {
 .artigo h1 {
   padding: 30px;
   color: #fff;
-}
-
-#titulo {
-  padding: 160px;
-  color: #fff;
   text-align: center;
   font-size: 3.0rem;
 }
 
-.foto-perfil{
+#titulo {
+  padding: 170px;
+  color: #fff;
+  text-align: center;
+  font-size: 4.0rem;
+}
+
+.project {
+  text-align: center;
+  color: #fff;
+  font-size: 2.0rem;
+}
+
+.card-container {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.cicle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.foto-perfil {
     width: 200px;
     top: 20px;
     right: 20px;
+}
+
+.social-media {
+  color: white;
+  align-items: center;
+}
+
+.social-media h1 {
+  text-align: center;
+}
+
+footer {
+  color: #fff;
+  background-color: #24252a;
+  text-align: center;
+}
+
+.animacao-texto {
+  position: relative;
+  top: 0;
+  transition: top 1s;
 }
