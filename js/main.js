@@ -46,7 +46,7 @@ class MobileNavbar {
   /*animação dos textos*/
   document.addEventListener('DOMContentLoaded', () => {
     new TypeIt('.animated', {
-        speed: 200,
+        speed: 98,
         strings: 'DESENVOLVEDOR FRONT-END',
         loop: true
     }).go()
