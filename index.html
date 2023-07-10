@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
     <title>Portifólio</title>
 </head>
@@ -30,10 +31,10 @@
     <h1> <span class="animated"></span></h1>
     <main class="animacao-texto">
 
-        <div class="artigo">
+        <div class="artigo" data-aos = "fade-up">
             <h1>Sobre mim</h1>
             <img class="foto-perfil" src="images/perfil.jpg" alt="perfil">
-            <p> Oi, me chamo Wanderson tenho 20 anos, moro no interior do Pará, estudo Front-end a 3 anos, tenho
+            <p class="paragrafo" data-aos = "fade-bottom"> Oi, me chamo Wanderson tenho 20 anos, moro no interior do Pará, estudo Front-end a 3 anos, tenho
                 conhecimento em designer, estou me aprofundando nas tecnologias de Java Script, HTML e CSS, já tenho
                 alguns projetos legais como, relógio digital, uma pokedex web, lista de tarefas online, e também estou
                 desenvolvendo o site da minha mãe para que ela possa vender os adesivos dela com mais facilidade, e,
@@ -47,7 +48,7 @@
         <div class="project">
             <h1>Projetos</h1>
         </div>
-        <div class="cicle">
+        <div class="cicle" data-aos = "fade-right">
             <div class="card-container">
                 <div class="card">
                     <div class="card-wrapper">
@@ -80,11 +81,13 @@
                 </div>
             </div>
         </div>
-        <div class="social-media">
+        <div class="social-media" data-aos = "fade-left">
             <h1>Redes Sociais</h1>
-            <a href="#">Instagram</a>
-            <a href="#">Git Hub</a>
-            <a href="#">Linkedln</a>
+            <div class="redes" data-aos = "fade-bottom">
+                <a href="#"> <img src="images/instagram.png" alt="Insta"></a>
+                <a href="#"> <img class="git-rede" src="images/pngwing.com.png" alt="git-redes"></a>
+                <a href="#"><img src="images/linkedln.png" alt=""></a>
+            </div>
         </div>
     </main>
 
@@ -93,6 +96,10 @@
         <p>Feito por: Wanderson Sousa</p>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

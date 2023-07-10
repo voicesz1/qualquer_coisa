@@ -40,13 +40,13 @@ nav {
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
 
 .mobile-menu {
@@ -156,7 +156,33 @@ h1 {
   align-items: center;
 }
 
+/*animação scroll*/
 
+.artigo {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.paragrafo {
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #5905B3;
+}
+
+.project {
+  line-height: 32px;
+  font-size: 16px;
+}
+.social-media {
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.redes {
+  line-height: 32px;
+  
+}
 .foto-perfil {
     width: 200px;
     top: 20px;
@@ -170,4 +196,25 @@ h1 {
 
 .social-media h1 {
   text-align: center;
+}
+.redes a img {
+  width: 58px;
+  padding: 3.8%;
+  margin: 11px;
+  position: relative;
+  left: 30%;
+}
+
+@media (max-width: 768px) {
+    .redes img {
+        width: 100%;
+    }
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #24252a;
+  box-shadow:  0px 3px 10px #030303;
+  padding: 10px;
 }
