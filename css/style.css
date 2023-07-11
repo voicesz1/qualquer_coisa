@@ -1,43 +1,50 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("images/fonts/Roboto-Regular.ttf");
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Agdasima', Times, serif;
-    box-sizing: border-box;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Agdasima', Times, serif;
+  box-sizing: border-box;
 }
 
 body {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: linear-gradient(black, #5905B3);
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(black, #5905B3);
 }
 
 
 
 a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
 }
 
 .nav-list {
@@ -122,6 +129,7 @@ h1 {
   padding: 67px;
   text-align: center;
   font-size: 3.0rem;
+  font-family: 'Agdasima' 'Times New Roman', Times, serif;
 }
 
 .artigo p {
@@ -200,6 +208,7 @@ h1 {
 
 .card:hover .img span {
   font-size: 28px;
+  color:#000;
 }
 
 .card .content {
@@ -222,15 +231,17 @@ h1 {
 
 .card .content p {
   margin: 0;
+  color: #ffff;
 }
 
 .card .content .title {
   font-size: 20px;
   font-weight: 600;
+  color: #fff;
 }
 
 .card .content .desc {
-  font-size: 14px;
+  font-size: 1.9rem;
   font-weight: 100;
   opacity: .8;
   margin-top: 8px;
@@ -264,6 +275,65 @@ h1 {
   position: relative;
   opacity: .8;
 }
+.card:hover .img-pokedex {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .img-pokedex span {
+  font-size: 28px;
+  color:#000;
+}
+
+.card .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .content p {
+  margin: 0;
+  color: #ffff;
+}
+
+.card .content .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card:hover .arrow {
+  transform: rotate(0);
+}
+
+.card .arrow span {
+  font-size: 24px;
+}
 
 .card .img-pokedex span {
   text-transform: uppercase;
@@ -271,7 +341,7 @@ h1 {
   font-weight: 100;
   font-style: italic;
   transition: all .5s;
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .card .img-homenagem {
@@ -298,15 +368,84 @@ h1 {
   color: white;
 }
 
+.card:hover .img-homenagem {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .img-homenagem span {
+  font-size: 28px;
+  color:#000;
+}
+
+.card .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .content p {
+  margin: 0;
+  color: #ffff;
+}
+
+.card .content .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card:hover .arrow {
+  transform: rotate(0);
+}
+
+.card .arrow span {
+  font-size: 24px;
+}
+
+.card .img-homenagem span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all .5s;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .card-animado {
     display: inline-block;
     overflow: hidden; 
   }
 }
-
+/*CARDS RESPONSIVOS REDES SOCIAIS*/
 .container-rede {
-  width: 1150px;
+  width: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -377,6 +516,12 @@ h1 {
 .container-rede .card-social:hover .content a{
   color:black;
   background-color: white;
+}
+
+@media (max-width: 720px) {
+  .container-rede {
+    flex-direction: column;
+  }
 }
 footer {
   text-align: center;
