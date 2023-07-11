@@ -161,6 +161,12 @@ h1 {
   padding: 90px;
 }
 
+@media (max-width: 768px) {
+  .artigo p {
+    padding: 0;
+  }
+}
+
 .project {
   text-align: center;
   color: #fff;
