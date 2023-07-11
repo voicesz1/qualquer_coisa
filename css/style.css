@@ -124,12 +124,34 @@ nav {
 .mobile-menu.active .line3 {
     transform: rotate(45deg)
 }
+
 h1 {
   color: #fff;
   padding: 67px;
   text-align: center;
   font-size: 3.0rem;
   font-family: 'Agdasima' 'Times New Roman', Times, serif;
+}
+
+.animated {
+  padding: 200px;
+  color: #fff;
+  text-align: center;
+  font-size: 4.0rem;
+}
+
+@media (max-width: 768px) {
+  .animated {
+    padding: 100px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated {
+    padding: 50px;
+    font-size: 1.5rem;
+  }
 }
 
 .artigo p {
@@ -146,6 +168,7 @@ h1 {
 
 .card-animado {
   display: flex;
+  margin: 0;
 }
 
 .container {
@@ -446,7 +469,7 @@ h1 {
 /*CARDS RESPONSIVOS REDES SOCIAIS*/
 .container-rede {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -521,6 +544,7 @@ h1 {
 @media (max-width: 720px) {
   .container-rede {
     flex-direction: column;
+    margin: 0;
   }
 }
 footer {
