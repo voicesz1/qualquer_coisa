@@ -167,7 +167,7 @@ h1 {
   }
 }
 
-.foto-perfil {
+.artigo .foto-perfil {
   width: 200px;
   position: relative;
   left: 42%;
@@ -176,7 +176,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .foto-perfil {
+  .artigo .foto-perfil {
     position: relative;
     left: 23%;
   }
