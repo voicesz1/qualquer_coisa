@@ -33,6 +33,7 @@ a:hover {
 }
 
 .logo {
+  z-index: 1;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -48,6 +49,8 @@ nav {
 }
 
 .nav-list {
+  position: relative;
+  z-index: 2;
   list-style: none;
   display: flex;
 }
@@ -58,8 +61,12 @@ nav {
 }
 
 .mobile-menu {
-    display: none;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: none;
+  cursor: pointer;
 }
 
 .mobile-menu div {
@@ -173,11 +180,13 @@ h1 {
   left: 42%;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  height: auto;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
   .artigo .foto-perfil {
-    position: relative;
+    position: relativo;
     left: 23%;
   }
 }
